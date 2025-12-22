@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+section {
+  margin: 24px 16px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+header {
+  padding: 48px 24px;
+  background-color: #060404;
+  color: white;
+}
+
+nav {
+  margin-bottom: 24px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #6ec1e4;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.dark {
+  background-color: #111;
+  color: #ebeae9;
+}
+
+.dark section {
+  background-color: #1e1e1e;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+@media (max-width: 600px) {
+
+  header {
+    padding: 28px 16px;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  main {
+    padding: 0 12px;
+  }
+
+  section {
+    margin: 16px 0;
+   
+  }
+
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  main {
+    max-width: 900px;
+  }
+
+  header {
+    padding: 40px 24px;
+  }
+}
