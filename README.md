@@ -10,6 +10,10 @@ It is designed to be simple, readable, and responsive, with a dark mode feature.
 - HTML
 - CSS
 - JavaScript
+## 📖 Learning Resources
+- YouTube – Web development tutorials from apna college and code with harry
+- MDN Web Docs – HTML, CSS, and JavaScript documentation
+- ChatGPT – Concept clarification, debugging, and project guidance
 
 ## Live Website
 https://chandansahoo23451-ux.github.io/portfolio/
