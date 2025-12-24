@@ -7,19 +7,15 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-}
-
-section {
-  margin: 24px 16px;
-  padding: 16px;
-  background-color: white;
-  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #111;
 }
 
 header {
-  padding: 48px 24px;
+  padding: 72px 24px;
   background-color: #060404;
   color: white;
+  text-align: center;
 }
 
 nav {
@@ -30,38 +26,67 @@ nav a {
   margin-right: 15px;
   text-decoration: none;
   color: #6ec1e4;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#dark-mode {
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 40px;
   margin-bottom: 12px;
 }
 
-h3 {
+header p {
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
+  opacity: 0.85;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 24px 16px;
 }
 
+section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* DARK MODE */
 .dark {
   background-color: #111;
   color: #ebeae9;
@@ -71,41 +96,27 @@ main {
   background-color: #1e1e1e;
 }
 
-footer {
-  text-align: center;
-  padding: 16px;
-  font-size: 14px;
-  opacity: 0.7;
+.dark header {
+  background-color: #000;
 }
-@media (max-width: 600px) {
 
+/* RESPONSIVE */
+@media (max-width: 600px) {
   header {
-    padding: 28px 16px;
-    text-align: center;
+    padding: 40px 16px;
   }
 
-  nav a {
-    display: inline-block;
-    margin-right: 6px;
+  h1 {
+    font-size: 32px;
   }
 
   main {
-    padding: 0 12px;
+    padding: 16px 12px;
   }
-
-  section {
-    margin: 16px 0;
-   
-  }
-
 }
-@media (min-width: 601px) and (max-width: 1024px) {
 
+@media (min-width: 601px) and (max-width: 1024px) {
   main {
     max-width: 900px;
-  }
-
-  header {
-    padding: 40px 24px;
   }
 }
